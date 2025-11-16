@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f1ff, #f9faff, #e6f7ff);
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+}
+.navbar {
+    background: #1e1f26;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: #00d4ff;
+}
+.container {
+    width: 85%;
+    background: #fff;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #222;
+}
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #005792;
+}
+.profile {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+.profile img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+.profile-details h2 {
+    font-size: 24px;
+    color: #222;
+}
+.profile-details p {
+    font-size: 16px;
+    color: #555;
+}
+.table {
+    width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+}
+.table th {
+    background: #005792;
+    color: #fff;
+    padding: 12px;
+}
+.table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+ul {
+    margin-left: 20px;
+}
+ul li {
+    margin: 6px 0;
+    font-size: 17px;
+}
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile img {
+        width: 130px;
+        height: 130px;
+    }
+}
